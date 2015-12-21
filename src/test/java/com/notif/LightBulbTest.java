@@ -4,7 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.not;
 import static org.junit.Assert.assertThat;
 
 public class LightBulbTest {
@@ -12,12 +11,12 @@ public class LightBulbTest {
     private LightBulb lightBulb;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() throws Exception{
         lightBulb = new LightBulb();
     }
 
     @Test
-    public void a_new_light_is_always_off() {
+    public void a_new_light_is_always_off(){
         assertThat(lightBulb.is_off(), is(true));
     }
 

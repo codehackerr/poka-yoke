@@ -2,6 +2,7 @@ package com.notif;
 
 
 public class LightBulb {
+    public static final String INVALID_TRANSITION_OFF_to_OFF = "Cannot turn off a light bulb which is already off";
     private boolean off = true;
 
     public boolean is_off() {
@@ -18,7 +19,7 @@ public class LightBulb {
     }
 
     public LightBulb off() {
-        if(is_off()) throw new IllegalStateException("Cannot turn off a light bulb which is already off");
+        if(is_off()) throw new IllegalStateException(INVALID_TRANSITION_OFF_to_OFF);
         this.off = true;
         return this;
     }
