@@ -18,4 +18,11 @@ public class LightBulbTest {
        assertThat(LightBulb.newLight().on(), isA(OnLight.class));
     }
 
+    @Test
+    public void an_on_light_can_be_turned_off(){
+        OnLight on = LightBulb.newLight().on();
+        assertThat(on.off(), isA(OffLight.class));
+    }
+
+
 }
