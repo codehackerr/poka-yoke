@@ -1,4 +1,4 @@
-package com.notif;
+package com.light.with_if_and_mutable_state;
 
 import org.junit.Before;
 import org.junit.Test;
