@@ -1,2 +1,7 @@
 .gradle/
 build
+if-to-not-if.iml
+.idea
+gradle
+gradlew
+gradlew.bat
