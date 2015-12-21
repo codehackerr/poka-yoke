@@ -38,4 +38,9 @@ public class LightBulbTest {
        lightBulb.off();
     }
 
+    @Test(expected = IllegalStateException.class)
+    public void an_on_light_cannot_be_turned_on(){
+        lightBulb.on().on();
+    }
+
 }
