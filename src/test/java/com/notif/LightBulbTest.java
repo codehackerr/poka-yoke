@@ -26,4 +26,12 @@ public class LightBulbTest {
         assertThat(lightBulb.on().is_on(), is(true));
     }
 
+    @Test
+    public void an_on_light_can_be_turned_off(){
+        LightBulb on_light = lightBulb.on();
+        assertThat(on_light.is_on(), is(true));
+
+        assertThat(on_light.off().is_off(), is(true));
+    }
+
 }

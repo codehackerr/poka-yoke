@@ -16,4 +16,9 @@ public class LightBulb {
     public boolean is_on() {
         return !this.off;
     }
+
+    public LightBulb off() {
+        this.off = true;
+        return this;
+    }
 }
