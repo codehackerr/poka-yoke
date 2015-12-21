@@ -8,9 +8,10 @@ A new Light Bulb is always in the OFF state.
 Valid transitions of the Light Bulb:
 
  ON to OFF
+
  OFF to ON
 
-Invalid operations
+Invalid operations:
 
  OFF when already OFF,
 
