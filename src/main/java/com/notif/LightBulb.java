@@ -18,6 +18,7 @@ public class LightBulb {
     }
 
     public LightBulb off() {
+        if(is_off()) throw new IllegalStateException("Cannot turn off a light bulb which is already off");
         this.off = true;
         return this;
     }

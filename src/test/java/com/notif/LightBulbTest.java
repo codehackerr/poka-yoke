@@ -34,4 +34,9 @@ public class LightBulbTest {
         assertThat(on_light.off().is_off(), is(true));
     }
 
+    @Test(expected = IllegalStateException.class)
+    public void an_off_light_cannot_be_turned_off(){
+       lightBulb.off();
+    }
+
 }
