@@ -1,5 +1,5 @@
 ### Status
-[![Build Status](https://travis-ci.org/codehackerr/if-to-not-if.png)](https://travis-ci.org/codehackerr/if-to-not-if)
+[![Build Status](https://api.travis-ci.org/codehackerr/if-to-not-if.png)](https://api.travis-ci.org/codehackerr/if-to-not-if.png)
 
 if-to-not-if
 =============
