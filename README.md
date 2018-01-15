@@ -1,24 +1,29 @@
 ### Status
 [![Build Status](https://api.travis-ci.org/codehackerr/if-to-not-if.png)](https://api.travis-ci.org/codehackerr/if-to-not-if.png)
 
-if-to-not-if
-=============
+Beautiful Client API with immutable objects
+===========================================
+Compare the following snippets for two different approaches on designing objects.
+See the difference of client APIs and look at the code to see how it's implemented.
 
-The domain of this problem is a Light Bulb.
+Immutable Objects
+```
 
-A new Light Bulb is always in the OFF state.
+Offlight offLight = LightBulb.newLight();
+OnLight onLight = offLight.on();
 
-Valid transitions:
+// And a blinker pattern
 
- ON to OFF
-
- OFF to ON
-
-Invalid Transitions:
-
- OFF when already OFF,
-
- ON when already ON
+LightBulb.newLight()
+ .on()
+ .off()
+ .on()
+ .off()
+ 
+```
+Mutable Objects
+```
+```
 
 Approach:
 
