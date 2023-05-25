@@ -192,5 +192,5 @@ Some examples use cases are:
 - sockets
 - files
 - database connections
-  - workflows
+- workflows
 
