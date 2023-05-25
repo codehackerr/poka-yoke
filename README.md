@@ -1,6 +1,5 @@
 ### Status
-[![Build Status](https://api.travis-ci.org/codehackerr/if-to-not-if.png)](https://api.travis-ci.org/codehackerr/if-to-not-if.png)
-
+[![Build Status](https://app.travis-ci.com/codehackerr/poka-yoke.svg?branch=master)](https://app.travis-ci.com/codehackerr/poka-yoke)
 ### Mistake Proofing (Poka-yoke) 
 
 [Poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke) is a Japanese term that means "mistake-proofing" or "inadvertent error prevention".
@@ -14,7 +13,7 @@ Through proper API design, we can prevent inadvertent errors in API usage by a c
 
 
 
-I will demonstrate this principle with a simple domain of a Light Bulb which transitions between `ON` and `OFF` state perpetually(never fuses).
+I will demonstrate this principle with a simple domain of a `Light Bulb` which transitions between `ON` and `OFF` state perpetually(never fuses).
 Though this example is trivial, it's good enough to demonstrate the core idea.
 
 Let's see few ways of implementing with and without  mistake proofing (`Poka-yoke`).
@@ -54,7 +53,7 @@ class LightBulb {
 
 With this approach the client can call `on` or `off` on the `LightBulb` irrespective of it's current state.
 When the client requests an invalid transition, it can be silently ignored or signalled to the client through an exception.
-In the above design the the client is signalled about the invalid transition request.
+In the above design the client is signalled about the invalid transition request.
 
 ```
 LightBulb light = new LightBulb();
@@ -153,7 +152,7 @@ With the above design
 - client code is simple (No invalid call handling)
 - both `static` and `dynamic` use cases are supported
 
-### static use case
+### Static use case
 ```
 
 LightBulb.newLight()
@@ -173,19 +172,25 @@ for(int i = 0, reps = 10; i < reps; i++) {
 ```
 
 ### Which style to use?
-Between the `static` and `dynamic` options above it's a trade-off and situational choice.
+The choice between the  `common interface` and `interface segregation` options, it's a trade-off and situational choice.
 
-The `dynamic` approach is useful if there is a cycle/loop through states.
+The `common interface` approach is useful if there is a cycle/loop through states.
 Eg: A traffic light.
+The `common interface` approach is useful when state transitions are not completely driven by the client.
+Eg: An external event, timer etc changing the internal state.
+
+`Interface segregation` on the other hand makes the transitions clear to the client API.
+This helps readability and reasoning of the code. This style is favorable when the state transitions are fully driven by the client.
+
 
 ### Applications
 There are different techniques to implement `Poka-yoke` in software design.
-The above pattern of interface segregation by state is applicable to any Finite State Machines.
+The above patterns are applicable to any Finite State Machines.
 
 Some examples use cases are:
 
 - sockets
 - files
 - database connections
-- workflows
+  - workflows
 
