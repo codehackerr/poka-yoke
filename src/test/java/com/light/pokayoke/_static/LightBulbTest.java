@@ -1,9 +1,10 @@
-package com.light.no_if_no_mutable_state;
+package com.light.pokayoke._static;
 
 
 import org.junit.Test;
 
-import static org.hamcrest.core.Is.isA;
+
+import static org.hamcrest.Matchers.isA;
 import static org.junit.Assert.assertThat;
 
 public class LightBulbTest {
@@ -23,6 +24,4 @@ public class LightBulbTest {
         OnLight on = LightBulb.newLight().on();
         assertThat(on.off(), isA(OffLight.class));
     }
-
-
 }

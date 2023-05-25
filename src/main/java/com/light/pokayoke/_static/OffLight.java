@@ -1,7 +1,7 @@
-package com.light.no_if_no_mutable_state;
+package com.light.pokayoke._static;
 
 
-public class OffLight {
+class OffLight {
     public OnLight on() {
         return new OnLight();
     }
