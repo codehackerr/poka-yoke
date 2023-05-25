@@ -172,7 +172,7 @@ for(int i = 0, reps = 10; i < reps; i++) {
 ```
 
 ### Which style to use?
-The choice between the  `common interface` and `interface segregation` options, it's a trade-off and situational choice.
+The choice between the  `common interface` and `interface segregation` options, is a trade-off and a situational choice.
 
 The `common interface` approach is useful if there is a cycle/loop through states.
 Eg: A traffic light.
