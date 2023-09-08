@@ -162,7 +162,7 @@ With the above design
 - client code is simple (No invalid call handling)
 - both `static` and `dynamic` use cases are supported
 
-### Static use case
+### Static Usecase
 ```java
 
 LightBulb.newLight()
@@ -172,7 +172,7 @@ LightBulb.newLight()
  
 ```
 
-### Dynamic use case
+### Dynamic Usecase
 ```java
 LightBulb light = LightBulb.newLight();
 for(int i = 0, reps = 10; i < reps; i++) {
@@ -180,7 +180,7 @@ for(int i = 0, reps = 10; i < reps; i++) {
 }
 ```
 
-### Practice Use cases
+### Practice Usecases
 Some other example use cases are. Give it a try. Think state transitions.
 Eg: It's invalid to run a query until you have an open database connection.
 
@@ -191,7 +191,7 @@ Eg: It's invalid to run a query until you have an open database connection.
 
 ### Discovering Mistake-Proof Software Design
 
-If you've heard of encapsulation and data hiding, you're already on the road to understanding  - Poka-yoke. This fancy term is like having a safety net in your code. It means not exposing your data, so you can't accidentally mess up an object's state. It's like protecting your code from friendly fire!
+If are familiar with encapsulation and data hiding, you're already on the road to understanding  - Poka-yoke. This fancy term is like having a safety net in your code. It means not exposing your data, so you can't accidentally mess up an object's state. It's like protecting your code from friendly fire!
 
 Now, imagine you're diving deeper into good software design, and you stumble upon the Law of Least Knowledge. It's like a close cousin of Poka-yoke - all about keeping things tidy and avoiding messy situations.
 
