@@ -8,7 +8,7 @@ Imagine an electric plug that can only fit into a power socket one way - that's 
 
 Now, here's the cool part:
 `
-Poka-yoke isn't just for the physical world; we can apply it to software too! In software, we're the "operators" when we use APIs. By designing APIs carefully, we can stop ourselves from making accidental mistakes.
+Poka-yoke isn't just for the physical world; we can apply it to software too! By designing APIs carefully, we can stop ourselves from making accidental mistakes.
 `
 
 To show you how this works, let's dive into a simple example: 
