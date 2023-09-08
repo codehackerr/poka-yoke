@@ -1,6 +1,6 @@
 ### Status
 [![Build Status](https://app.travis-ci.com/codehackerr/poka-yoke.svg?branch=master)](https://app.travis-ci.com/codehackerr/poka-yoke)
-### [Poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke)  (Mistake Proofing) 
+### [Poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke)  - Mistake Proof Your Code 
 
 Have you heard of [Poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke)? It's a Japanese concept that means "mistake-proofing," and it's all about preventing errors before they happen. Think of it as a safety net to keep us from making blunders.
 
