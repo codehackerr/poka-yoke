@@ -2,14 +2,10 @@
 [![Build Status](https://app.travis-ci.com/codehackerr/poka-yoke.svg?branch=master)](https://app.travis-ci.com/codehackerr/poka-yoke)
 ### [Poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke)  - Mistake Proof Your Code 
 
-Have you heard of [Poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke)? It's a Japanese concept that means "mistake-proofing," and it's all about preventing errors before they happen. Think of it as a safety net to keep us from making blunders.
+[Poka-yoke](https://en.wikipedia.org/wiki/Poka-yoke)? is a Japanese concept that means "mistake-proofing".
+Idea is to prevent inadvertant errors by operators of machines and systems. Example: How a plug can fit only one way to a socket.
 
-Imagine an electric plug that can only fit into a power socket one way - that's Poka-yoke in action, making it impossible to plug it in the wrong way.
-
-Now, here's the cool part:
-`
-Poka-yoke isn't just for the physical world; we can apply it to software too! By designing APIs carefully, we can stop ourselves from making accidental mistakes.
-`
+Applied to software, `poka-yoke` means designing mistake proofed client APIs.
 
 To show you how this works, let's dive into a simple example: 
 `
@@ -191,14 +187,7 @@ Eg: It's invalid to run a query until you have an open database connection.
 
 ### Discovering Mistake-Proof Software Design
 
-If are familiar with encapsulation and data hiding, you're already on the road to understanding  - Poka-yoke. This fancy term is like having a safety net in your code. It means not exposing your data, so you can't accidentally mess up an object's state. It's like protecting your code from friendly fire!
+ - Data hiding and encapsulation. Start with everything hidden and expose only what is really required.
+ - Law of least knowledge. The clients need to know the minimal what they need to get the job done. Interface seggregation principle of SOLID is a way to achieve this.
+ - Prevent invalid transitions (That's what we have demonstrated primarily here). Model State Machines as Sate Machines, don't leave them as a generic class.
 
-Now, imagine you're diving deeper into good software design, and you stumble upon the Law of Least Knowledge. It's like a close cousin of Poka-yoke - all about keeping things tidy and avoiding messy situations.
-
-And hey, what about SOLID? These are like the superheroes of software design principles, making your code robust and clean.
-
-Here's the thing, though - trying to remember all these principles in every design can be a bit overwhelming. But don't worry, you'll get the hang of it over time. It's like learning to ride a bike; it feels tricky at first, but soon it becomes second nature.
-
-In the meantime, start with a clear intention - that's Poka-yoke. Decide what you want to achieve first, and then pick the right principle or technique to get you there. It's like setting your GPS before a road trip - makes the journey smoother!
-
-Keep exploring, keep coding, and soon enough, you'll be a pro at creating "Mistake-Proofed" software.
