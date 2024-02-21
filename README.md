@@ -9,7 +9,7 @@ Applied to software, `poka-yoke` means designing mistake proofed client APIs.
 
 To show you how this works, let's dive into a simple example: 
 `
-A perpetual light bulb. It's a bulb that never burns out; it just switches on and off as you control it. It might sound trivial, but it's the perfect way to illustrate the power of Poka-yoke in software.
+A perpetual light bulb. It's a bulb that never burns out; it just switches on and off as you control it. It might sound trivial, but sufficient to demonstrate the idea.
 `
 
 So, join me as we explore different ways to implement this, with and without the magic of mistake-proofing (Poka-yoke).
@@ -189,5 +189,5 @@ Eg: It's invalid to run a query until you have an open database connection.
 
  - Data hiding and encapsulation. Start with everything hidden and expose only what is really required.
  - Law of least knowledge. The clients need to know the minimal what they need to get the job done. Interface seggregation principle of SOLID is a way to achieve this.
- - Prevent invalid transitions (That's what we have demonstrated primarily here). Model State Machines as Sate Machines, don't leave them as a generic class.
+ - Prevent invalid transitions (That's what we have demonstrated primarily here). Model State Machines as Sate Machines, don't design them as a generic object that can be mutated by the clients in unintended ways.
 
